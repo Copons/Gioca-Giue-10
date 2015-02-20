@@ -1,0 +1,15 @@
+/*
+Theme Name: Gioca Giuè 10 Refactored
+Theme URI: http://giocagiue.it/
+Author: Jacopo "Copons" Tomasone
+Author URI: http://copons.it/
+Description: One of the weekly iterations of the excellent blog Gioca Giuè.
+Version: 10.0
+Tags: frigging-awesome
+*/
+
+.comment header .author .fn,
+.guest.author .fn
+{
+	display: none;
+}

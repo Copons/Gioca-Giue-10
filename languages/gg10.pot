@@ -1,0 +1,321 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gioca Giue 10\n"
+"POT-Creation-Date: 2015-02-20 22:49+0100\n"
+"PO-Revision-Date: 2015-02-20 22:49+0100\n"
+"Last-Translator: \n"
+"Language-Team: Jacopo Tomasone\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPathExcluded-0: ../_DEV\n"
+
+#: ../comments.php:62
+msgid "Il commento &egrave; in attesa di approvazione da parte dello staff."
+msgstr ""
+
+#: ../comments.php:77 ../comments.php:83
+msgid "Controquerela"
+msgstr ""
+
+#: ../comments.php:101
+msgid "Pingback"
+msgstr ""
+
+#: ../comments.php:136
+msgid "querela"
+msgstr ""
+
+#: ../comments.php:138
+msgid "querele"
+msgstr ""
+
+#: ../comments.php:151
+msgid "Nessuna querela"
+msgstr ""
+
+#: ../comments.php:159
+msgid "Sporgi querela!"
+msgstr ""
+
+#: ../comments.php:160 ../content-single.php:109 ../content-single.php:165
+msgid "Querela"
+msgstr ""
+
+#: ../comments.php:161
+msgid "Ritira la controquerela"
+msgstr ""
+
+#: ../comments.php:162
+msgid "Minaccia la querela"
+msgstr ""
+
+#: ../content-archive.php:45
+msgid "Hai cercato"
+msgstr ""
+
+#: ../content-archive.php:48
+msgid "risultato"
+msgstr ""
+
+#: ../content-archive.php:50
+msgid "risultati"
+msgstr ""
+
+#: ../content-archive.php:57
+msgid "AMMERDA!!"
+msgstr ""
+
+#: ../content-archive.php:58
+msgid "La pagina che stai cercando non esiste!"
+msgstr ""
+
+#: ../content-archive.php:58
+msgid "Fa&apos; il serio e non ci provare mai pi&ugrave;."
+msgstr ""
+
+#: ../content-archive.php:62
+msgid "Archivio del"
+msgstr ""
+
+#: ../content-archive.php:67 ../content-archive.php:72
+msgid "Archivio di"
+msgstr ""
+
+#: ../content-archive.php:84
+msgid ""
+"Tutti i capolavori assoluti di giornalismo videoludico del Blasonato Autore"
+msgstr ""
+
+#: ../content-loop-featured.php:98 ../content-loop.php:78
+#: ../content-single.php:112 ../content-single.php:168
+msgid "Articolo non querelabile"
+msgstr ""
+
+#: ../content-single.php:84
+msgid "Un eccellente articolo di"
+msgstr ""
+
+#: ../content-single.php:108 ../content-single.php:110
+#: ../content-single.php:164 ../content-single.php:166
+msgid "Querele"
+msgstr ""
+
+#: ../content-single.php:196
+msgid ""
+"Il proprietario del blog e gli autori degli articoli dichiarano di non "
+"essere responsabili per i commenti inseriti dai lettori che saranno i soli "
+"responsabili delle proprie dichiarazioni, secondo le leggi vigenti in "
+"Italia. Eventuali commenti, lesivi dell&apos;immagine o dell&apos;"
+"onorabilit&agrave; di persone terze, non sono da attribuirsi agli autori, "
+"nemmeno se il commento viene espresso in forma anonima o criptata."
+msgstr ""
+
+#: ../content-single.php:246
+msgid "Prossimo articolo"
+msgstr ""
+
+#: ../functions.php:71
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:73
+msgid "Aggiungi widget alla sidebar."
+msgstr ""
+
+#: ../functions.php:81
+msgid "Ads"
+msgstr ""
+
+#: ../functions.php:83
+msgid "Aggiungi un banner nella homepage."
+msgstr ""
+
+#: ../inc/author-meta-loop.php:21 ../inc/author-meta-post-footer.php:32
+#: ../inc/author-meta-post-footer.php:35
+#: ../inc/author-meta-post-footer.php:97
+#: ../inc/author-meta-post-footer.php:100
+#: ../inc/author-meta-post-header.php:21
+msgid "Blasonato Ospite"
+msgstr ""
+
+#: ../inc/author-meta-loop.php:30 ../inc/author-meta-loop.php:48
+#: ../inc/author-meta-post-footer.php:35
+#: ../inc/author-meta-post-footer.php:100
+#: ../inc/author-meta-post-header.php:26
+#: ../inc/author-meta-post-header.php:40
+msgid "Visualizza tutti gli articoli di"
+msgstr ""
+
+#: ../inc/author-meta-post-footer.php:17
+#: ../inc/author-meta-post-footer.php:88
+msgid "Avete letto un articolo del Blasonato"
+msgstr ""
+
+#: ../inc/author-meta-post-footer.php:19
+msgid "Avete letto un articolo dei Blasonati"
+msgstr ""
+
+#: ../inc/meta-boxes.php:16
+msgid "Payoff"
+msgstr ""
+
+#: ../inc/meta-boxes.php:65
+msgid "Voto in scala Consolemania"
+msgstr ""
+
+#: ../inc/meta-boxes.php:93
+msgid "Grafica"
+msgstr ""
+
+#: ../inc/meta-boxes.php:93 ../inc/meta-boxes.php:108
+#: ../inc/meta-boxes.php:123
+msgid "(+ o -)"
+msgstr ""
+
+#: ../inc/meta-boxes.php:97 ../inc/meta-boxes.php:112
+#: ../inc/meta-boxes.php:127 ../inc/meta-boxes.php:356
+msgid "Voto"
+msgstr ""
+
+#: ../inc/meta-boxes.php:108
+msgid "Sonoro"
+msgstr ""
+
+#: ../inc/meta-boxes.php:123
+msgid "Giocabilit&agrave;"
+msgstr ""
+
+#: ../inc/meta-boxes.php:138
+msgid "Piattaforma"
+msgstr ""
+
+#: ../inc/meta-boxes.php:142
+msgid "Sviluppatore"
+msgstr ""
+
+#: ../inc/meta-boxes.php:146 ../inc/meta-boxes.php:290
+msgid "Voto Totale"
+msgstr ""
+
+#: ../inc/meta-boxes.php:229
+msgid "Voto in scala K"
+msgstr ""
+
+#: ../inc/meta-boxes.php:246
+msgid "Voto Grafica"
+msgstr ""
+
+#: ../inc/meta-boxes.php:257
+msgid "Voto QI"
+msgstr ""
+
+#: ../inc/meta-boxes.php:268
+msgid "Voto Sonoro"
+msgstr ""
+
+#: ../inc/meta-boxes.php:279
+msgid "Voto Fattore K"
+msgstr ""
+
+#: ../inc/meta-boxes.php:343
+msgid "Voto in scala Pitchfork"
+msgstr ""
+
+#: ../inc/widgets.php:18
+msgid "GG10 Popular Posts"
+msgstr ""
+
+#: ../inc/widgets.php:21
+msgid "Articoli Popolari"
+msgstr ""
+
+#: ../inc/widgets.php:82 ../inc/widgets.php:258
+msgid "Titolo"
+msgstr ""
+
+#: ../inc/widgets.php:85
+msgid "Numero di post da mostrare"
+msgstr ""
+
+#: ../inc/widgets.php:103
+msgid "GG10 Recent Comments"
+msgstr ""
+
+#: ../inc/widgets.php:106
+msgid "Commenti Recenti"
+msgstr ""
+
+#: ../inc/widgets.php:134
+msgid "Comment a"
+msgstr ""
+
+#: ../inc/widgets.php:192
+msgid "Numero di commenti da mostrare"
+msgstr ""
+
+#: ../inc/widgets.php:195
+msgid "Lunghezza massima del commento"
+msgstr ""
+
+#: ../inc/widgets.php:213
+msgid "GG10 Authors List"
+msgstr ""
+
+#: ../inc/widgets.php:216
+msgid "Lista degli autori"
+msgstr ""
+
+#: ../index.php:39
+msgid "Pagina precedente"
+msgstr ""
+
+#: ../sidebar.php:32
+msgid "Home"
+msgstr ""
+
+#: ../sidebar.php:38
+msgid "The GG Fundamentals"
+msgstr ""
+
+#: ../sidebar.php:51
+msgid "Socializzaci"
+msgstr ""
+
+#: ../sidebar.php:65
+msgid "Derubaci coscienzioso"
+msgstr ""
+
+#: ../sidebar.php:79
+msgid "Area riservata"
+msgstr ""
+
+#: ../sidebar.php:85
+msgid "Credits"
+msgstr ""
+
+#: ../sidebar.php:88
+msgid "Web Design"
+msgstr ""
+
+#: ../sidebar.php:89
+msgid "Logo e sfondo"
+msgstr ""
+
+#: ../sidebar.php:90
+msgid "Testing"
+msgstr ""
+
+#: ../sidebar.php:91
+msgid "Stile di vita"
+msgstr ""
+
+#: ../sidebar.php:92
+msgid "Banane"
+msgstr ""
