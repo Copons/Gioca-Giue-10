@@ -1,0 +1,72 @@
+/**
+ * COMMENT EDITOR STYLE
+ */
+
+
+
+
+@import 'variables.less';
+@import 'fonts.less';
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+#wp-comment-editor-container {
+	border: 1px solid @border-color;
+}
+
+.mce-content-body,
+.mceContentBody {
+	font-family: @font-family-base;
+	font-size: @font-size-small;
+
+	* {
+		max-width: 100%;
+		height: auto;
+	}
+
+	a, a:link, a:active, a:visited {
+		color: @link-color;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	a:hover {
+		color: @link-hover-color;
+	}
+
+	a img, a:link img, a:active img, a:hover img, a:visited img {
+		border: 0;
+		text-decoration: none;
+	}
+
+	blockquote {
+		margin-left: 1em;
+		padding: 5px;
+		background-color: @border-color;
+		color: @alt-color;
+		font-weight: 300;
+
+		p {
+			margin: 0.5em 0;
+		}
+
+		.quote-by {
+			margin-top: 0;
+			font-size: @font-size-smaller;
+			font-style: italic;
+			a {
+				margin-left: 5px;
+				.icomoon;
+				&:before {
+					content: "\e619"; // .icon-arrow-up
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.mce-content-body {
+		font-size: @font-size-smaller;
+	}
+}

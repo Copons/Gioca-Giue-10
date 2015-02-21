@@ -1,0 +1,171 @@
+/**
+ * VOTES
+ */
+
+
+
+
+@import 'variables.less';
+
+
+
+
+/**
+ * 1.0 - Vote Box
+ */
+
+aside.votes {
+	.clearfix;
+	font: 14px/24px @font-family-base;
+	margin: 30px 0 10px 0;
+	.vote-box {
+		float: right;
+		margin: 10px 5px;
+		width: 230px;
+		h3 {
+			font: 14px/24px @font-family-base;
+			margin-top: 10px;
+			text-align: center;
+		}
+		&.vote-box-pitchfork { width: 160px }
+		&.vote-box-consolemania { width: 280px }
+		&.vote-box-k-mag { width: 230px; }
+	}
+
+
+
+
+/**
+ * 2.0 - Consolemania
+ */
+
+	.consolemania {
+		border: none;//border: 1px solid #000;
+		border-collapse: collapse;
+		color: #000;
+		margin: 0;
+		text-align: center;
+		.header, .footer {
+			background-color: #2f38b1;
+			border: 1px solid #000;
+			border-bottom: none;
+			font: bold 20px/20px "Lucida Console", Monaco, monospace;
+			font-variant: small-caps;
+			letter-spacing: 1px;
+			padding: 15px 5px 5px 5px;
+			vertical-align: bottom;
+			h4 {
+				color: #fff;
+				font: bold 20px/20px "Lucida Console", Monaco, monospace;
+				font-variant: small-caps;
+				padding: 0;
+				margin: 0;
+			}
+		}
+		.footer {
+			border-right: 1px solid #fff;
+			border-bottom: 1px solid #000;
+			font-size: 16px;
+			padding-top: 10px;
+			vertical-align: middle;
+		}
+		.left {
+			background-color: #fff;
+			border: 1px solid #000;
+			font: 11px/14px Arial, Helvetica, sans-serif;
+			padding: 4px 2px;
+			vertical-align: middle;
+			width: 220px;
+			h4 {
+				font-family: "Lucida Console", Monaco, monospace;
+				font-size: 12px;
+				font-weight: bold;
+				margin: 0;
+				padding: 0;
+				padding-left: 5px;
+			}
+		}
+		.right {
+			background-color: #2f38b1;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			border-right: 1px solid #000;
+			color: #fff;
+			font: bold 30px/30px Arial, Helvetica, sans-serif;
+			padding: 5px;
+			text-align: center;
+			vertical-align: middle;
+			width: 40px;
+		}
+		.vote {
+			border-bottom: 1px solid #000;
+			font: 34px/50px Arial, Helvetica, sans-serif;
+			padding: 10px 5px;
+		}
+	}
+
+
+
+
+/**
+ * 3.0 - Pitchfork
+ */
+
+	.pitchfork {
+		color: #ed4230;
+		font: 20px/30px Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		text-align: center;
+		div {
+			border: 3px solid #ed4230;
+			border-radius: 80px;
+			background-color: #fff;
+			height: 34px;
+			margin: 0 auto;
+			padding: 8px 3px 3px 3px;
+			text-align: center;
+			width: 40px;
+		}
+	}
+
+
+
+
+/**
+ * 4.0 - K Magazine
+ */
+
+	.k-mag {
+		background-color: #000;
+		font: 20px/40px Helvetica, Arial, sans-serif;
+		padding: 10px;
+		.vote {
+			color: #fc0;
+			font: bold 44px/70px "Arial Black", Gadget, Arial, sans-serif;
+			letter-spacing: 2px;
+		}
+		.grades {
+			color: #fff;
+			font: italic 10px/14px Arial, Helvetica, sans-serif;
+			text-align: right;
+		}
+		.bar {
+			background-color: #f0c;
+			color: #fc0;
+			font: bold 14px/18px "Arial Black", Gadget, Arial, sans-serif;
+			margin-top: 5px;
+			padding-left: 5px;
+			width: 25px;
+		}
+		.bar1 { width: 90px; }
+		.bar2 { width: 100px; }
+		.bar3 { width: 112px; }
+		.bar4 { width: 124px; }
+		.bar5 { width: 136px; }
+		.bar6 { width: 148px; }
+		.bar7 { width: 160px; }
+		.bar8 { width: 172px; }
+		.bar9 { width: 184px; }
+		.bar10 { width: 200px; }
+	}
+}

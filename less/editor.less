@@ -1,0 +1,32 @@
+/**
+ * WORDPRESS EDITOR STYLE
+ */
+
+
+
+
+@import 'normalize.less';
+@import 'lesshat.less';
+@import 'variables.less';
+@import 'fonts.less';
+
+@external: (@content-width - @text-width) / 2;
+
+
+
+
+body {
+	max-width: @text-width;
+	margin: 20px @external;
+	color: @text-color;
+	font-family: @font-family-base;
+	font-size: @font-size-base;
+	font-weight: 400;
+	line-height: @line-height-base;
+	word-wrap: break-word;
+}
+
+
+
+
+@import 'typography.less';

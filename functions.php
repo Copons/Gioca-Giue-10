@@ -129,19 +129,19 @@ function gg10_scripts() {
 	wp_enqueue_style( 'gg10-style', get_template_directory_uri() . '/css/style.css', array(), '2.1.0' );
 
 	// Load the comment editor stylesheet.
-	wp_enqueue_style( 'gg-comment-style', get_template_directory_uri() . '/css/editor.css', array( 'gg-style' ), '1.1.0' );
+	wp_enqueue_style( 'gg10-comment-style', get_template_directory_uri() . '/css/comment-editor.css', array( 'gg10-style' ), '1.1.1' );
 
 	// Load the css helper script
-	wp_enqueue_script( 'gg-css-browser-selector', get_template_directory_uri() . '/js/css_browser_selector.min.js', array(), '0.6.3', false );
+	wp_enqueue_script( 'gg10-css-browser-selector', get_template_directory_uri() . '/js/css_browser_selector.min.js', array(), '0.6.3', false );
 
 	// Load the swipe sidebar script
-	wp_enqueue_script( 'gg-sidr', get_template_directory_uri() . '/js/jquery.sidr.min.js', array(), '1.2.1', true );
+	wp_enqueue_script( 'gg10-sidr', get_template_directory_uri() . '/js/jquery.sidr.min.js', array(), '1.2.1', true );
 
 	// Load the modal box script
-	wp_enqueue_script( 'gg-magnific-popup', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'gg10-magnific-popup', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array( 'jquery' ), '1.0.0', true );
 	
 	// Load the functions script
-	wp_enqueue_script( 'gg-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.4.0', true );
+	wp_enqueue_script( 'gg10-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.4.0', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'gg10_scripts' );
@@ -416,7 +416,7 @@ function gg10_mce_comments() {
 			'media_buttons'	=> false,
 			'textarea_rows'	=> 7,
 			'tinymce'		=> array(
-				'content_css'			=> get_stylesheet_directory_uri() . '/css/editor.css',
+				'content_css'			=> get_stylesheet_directory_uri() . '/css/comment-editor.css',
 				'toolbar1'				=> 'bold, italic, blockquote, link, unlink, image',
 				'toolbar2'				=> false,
 				'paste_remove_styles'	=> true,
