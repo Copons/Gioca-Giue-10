@@ -9,8 +9,13 @@
  * 1.0 Typography
  */
 
-h1, h2, h3, h4, h5, h6 {
-		color: @alt-color;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: @alt-color;
 	font-family: @font-family-alt;
 	font-weight: 700;
 	&:first-child {
@@ -59,8 +64,8 @@ blockquote {
 pre {
 	margin-bottom: 1em;
 	padding: 8px;
-	background-color: @border-color;
 	border: 1px solid @shadow-color;
+	background-color: @border-color;
 	color: @flat-pomegranate;
 	font-size: @font-size-small;
 }
@@ -75,7 +80,11 @@ pre {
 img {
 	max-width: 100%;
 }
-img, img[height], img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"] {
+img,
+img[height],
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
 	height: auto;
 }
 
@@ -118,15 +127,15 @@ hr {
 	color: @shadow-color;
 	text-align: center;
 	&:after {
-		content: "\e604";
 		display: inline-block;
 		position: relative;
 		top: -1em;
+		padding: 0 0.5em;
+		background-color: @white;
 		color: @alt-color;
 		font-family: 'GG10';
 		font-size: 0.8em;
-		padding: 0 0.5em;
-		background-color: @white;
+		content: "\e604";
 	}
 }
 
@@ -156,7 +165,8 @@ hr {
  * 4.0 Caption
  */
 
-img, .wp-caption {
+img,
+.wp-caption {
 	&.alignleft {
 		margin: 0.5em 1em 0.5em -@external;
 	}
@@ -213,7 +223,8 @@ embed, iframe, object, video {
 	body {
 		margin: 20px 40px;
 	}
-	img, .wp-caption {
+	img,
+	.wp-caption {
 		&.alignleft {
 			margin: 0.5em 1em 0.5em 0;
 		}

@@ -1,0 +1,321 @@
+/**
+ * MEDIA QUERIES
+ */
+
+
+
+
+@import 'variables.less';
+
+
+
+
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+
+
+
+/**
+ * min-width: 1320px
+ */
+
+@media screen and (min-width: 1320px) {
+	.home #content {
+		text-align: center;
+	}
+	article.loop {
+		vertical-align: top;
+	}
+}
+
+
+
+
+/**
+ * min-width: 1020px
+ */
+
+@media screen and (max-width: 1020px) {
+	body {
+		min-width: 100%;
+		max-width: 100%;
+	}
+	#archive-header h1,
+	#archive-header div,
+	#content .prev-page,
+	article.featured,
+	.post-container,
+	.single.has-post-thumbnail .featured-image
+	{
+		width: 100%;
+		max-width: 100%;
+	}
+	article.loop,
+	aside.loop-aside {
+		width: 90%;
+		max-width: 100%;
+	}
+	.post-body {
+		img,
+		.wp-caption {
+			&.alignleft {
+				margin: 0.5em 1em 0.5em 0;
+			}
+			&.alignright {
+				margin: 0.5em 0 0.5em 1em;
+			}
+			&.aligncenter {
+				margin-top: 0.5em;
+				margin-bottom: 0.5em;
+			}
+		}
+	}
+}
+
+
+
+
+/**
+ * min-width: 740px
+ */
+
+@media screen and (max-width: 740px) {
+	article.single.has-post-thumbnail {
+		.featured-image header a {
+			padding: 20px;
+		}
+	}
+	.infinite-loader,
+	.post-body,
+	#comments {
+		width: 90%;
+		max-width: 100%;
+	}
+}
+
+
+
+
+/**
+ * min-width: 600px
+ */
+
+@media screen and (max-width: 600px) {
+	body {
+		font-size: @font-size-small;
+	}
+	#comments {
+		font-size: @font-size-smaller;
+	}
+	#fixed-nav {
+		font-size: @font-size-base;
+		width: 100px;
+	}
+	#home-link {
+		float: left;
+		width: 40px;
+		height: 40px;
+		&:after {
+			display: none;
+		}
+	}
+	#sidebar-toggle {
+		float: left;
+		width: 30px;
+		height: 30px;
+		margin: 0 0 0 10px;
+		padding: 5px;
+		&:after {
+			display: none;
+		}
+	}
+	#site-header {
+		padding: 70px 0 70px 0;
+		background-size: contain, cover;
+	}
+	article.loop {
+		.post-meta,
+		.excerpt {
+			opacity: 1;
+		}
+	}
+	#archive-header,
+	article.featured header,
+	article.single,
+	.previous-post {
+		h1 {
+			font-size: 24px;
+		}
+	}
+	article.loop {
+		text-align: center;
+		img {
+			display: block;
+			float: none;
+			margin: 0 auto 20px auto;
+		}
+		header {
+			padding: 0;
+		}
+		header h1 {
+			font-size: 18px;
+			text-align: center;
+		}
+		.excerpt {
+			padding: 0;
+		}
+		.post-meta .category{
+			display: block;
+			padding: 0 0 5px 0;
+			a {
+				display: block;
+				padding: 5px 15px;
+			}
+		}
+	}
+	article.loop.has-post-thumbnail {
+		header {
+			margin-left: 0;
+		}
+		.excerpt {
+			margin-left: 0;
+		}
+	}
+
+	article.single.has-post-thumbnail {
+		.featured-image {
+			height: auto;
+			padding-top: 80px;
+			header {
+				position: relative;
+				a {
+					padding: 20px;
+				}
+			}
+		}
+	}
+	article.featured.has-post-thumbnail {
+		header {
+			a {
+				padding-top: 140px;
+			}
+		}
+	}
+	article.featured .post-meta .comments,
+	article.single .post-meta,
+	article.single .post-author .intro,
+	article.single .post-author h3,
+	article.single .post-related p {
+		font-size: @font-size-small;
+	}
+	article.single .post-meta .author {
+		font-size: @font-size-base;
+	}
+	article.single .post-meta .author .author-disclaimer {
+		font-size: @font-size-smaller - 2px;
+	}
+	.post-body blockquote,
+	.comment-body blockquote
+	{
+		font-size: @font-size-small;
+	}
+	article.hentry .post-meta {
+		text-align: center;
+	}
+	article.single .post-author img {
+		width: 50px;
+		height: 50px;
+	}
+	#sidebar {
+		.sidebar-top {
+			padding: 5px;
+		}
+		#sidebar-home {
+			margin-top: 10px;
+		}
+		#sidebar-close {
+			width: 30px;
+			height: 30px;
+			margin: 0 0 0 10px;
+			padding: 5px;
+			&:after {
+				display: none;
+			}
+		}
+		#search-form {
+			input {
+				font-size: @font-size-smaller;
+			}
+		}
+		.sidebar-content {
+			padding: 0px 5px 20px 5px;
+		}
+		.widget {
+			width: 100%;
+			margin-top: 10px;
+			h2 {
+				font-size: @font-size-small;
+			}
+			.widget-body {
+				font-size: @font-size-smaller;
+			}
+		}
+		footer div {
+			font-size: @font-size-smaller;
+		}
+	}
+}
+
+
+
+
+/**
+ * Mobile Fixes
+ */
+
+.mobile {
+	.single.has-post-thumbnail .featured-image {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		max-height: auto;
+		padding: 0;
+		border: none;
+		background: @body-bg-color !important;
+		.hidden-image {
+			display: block;
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+			max-height: auto;
+		}
+		header {
+			position: static;
+			background: none;
+			&:hover {
+				background: none;
+			}
+			a {
+				color: @link-color;
+				&:hover {
+					color: @link-hover-color;
+				}
+			}
+			#gotostart {
+				position: absolute;
+				top: 20px;
+				a {
+					color: #fff;
+					&:hover {
+						color: @link-hover-color;
+					}
+				}
+			}
+		}
+	}
+}
