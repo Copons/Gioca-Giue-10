@@ -15,7 +15,7 @@ if ( function_exists( 'coauthors_posts_links' ) ) :
 
 	foreach ( $coauthors as $coauthor ) :
 
-		if ( 'guest-author' == $coauthor->type) : ?>
+		if ( 'guest-author' == $coauthor->type ) : ?>
 
 			<span class="guest icon-gamepad">
 				<?php echo $coauthor->display_name . ' <i>(' . __( 'Blasonato Ospite', 'gg10' ) . ')</i>'; ?>

@@ -31,7 +31,7 @@ function gg10_comments ($comment, $args, $depth) {
 					<?php comment_author_link(); ?>
 
 					<span class="fn" itemprop="name">
-						<?php echo get_comment_author( 'c' ); ?>
+						<?php echo get_comment_author(); ?>
 					</span>
 
 					<meta itemprop="url" content="<?php echo get_comment_author_url(); ?>" />

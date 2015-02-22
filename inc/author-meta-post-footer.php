@@ -21,18 +21,18 @@ if ( function_exists( 'coauthors_posts_links' ) ) :
 
 	foreach ( $coauthors as $coauthor ) : ?>
 
-		<div class="vcard author" itemprop="author" itemscope itemtype="http://schema.org/Person">';
+		<div class="vcard author" itemprop="author" itemscope itemtype="http://schema.org/Person">
 
 			<?php echo gg10_get_avatar( $coauthor->ID, 150 ); ?>
 
 			<meta itemprop="image" content="<?php echo gg10_get_avatar_src( $coauthor->ID, 'thumbnail' ) ?>" />
 
 			<h3 class="fn" itemprop="name">
-				<?php if ( $coauthor->type == 'guest-author' ) :
+				<?php if ( 'guest-author' == $coauthor->type ) :
 					echo $coauthor->display_name . ' <i>(' . __( 'Blasonato Ospite', 'gg10' ) . ')</i>';
 				?>
 				<?php else :
-					echo '<a href="' . get_author_posts_url($coauthor->ID) . '" title="' . __( 'Visualizza tutti gli articoli di', 'gg10' ) . ' ' . $coauthor->display_name . '">' . $coauthor->display_name . ' <i>(' . __( 'Blasonato Ospite', 'gg10' ) . ')</i></a>';
+					echo '<a href="' . get_author_posts_url($coauthor->ID) . '" title="' . __( 'Visualizza tutti gli articoli di', 'gg10' ) . ' ' . $coauthor->display_name . '">' . $coauthor->display_name . '</a>';
 				endif; ?>
 			</h3>
 

@@ -102,8 +102,8 @@ function gg10_fonts_url() {
 
 	$fonts_url = '';
 	$fonts     = array(
-		'Open+Sans:400italic,700italic,400,700',
-		'Press+Start+2P',
+		'Open Sans:400italic,700italic,400,700',
+		'Press Start 2P',
 		'Raleway:300,400,700'
 	);
 
