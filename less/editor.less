@@ -24,3 +24,51 @@ body {
 	line-height: @line-height-base;
 	word-wrap: break-word;
 }
+
+
+
+
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+
+
+
+@media screen and (max-width: 1020px) {
+	body {
+		margin: 20px;
+	}
+	img,
+	.wp-caption {
+		&.alignleft {
+			margin: 0.5em 1em 0.5em 0;
+		}
+		&.alignright {
+			margin: 0.5em 0 0.5em 1em;
+		}
+		&.aligncenter {
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width: 740px) {
+	body {
+		width: 90%;
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		font-size: @font-size-small;
+	}
+}
