@@ -141,7 +141,7 @@ function gg10_scripts() {
 	wp_enqueue_script( 'gg10-magnific-popup', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array( 'jquery' ), '1.0.0', true );
 	
 	// Load the functions script
-	wp_enqueue_script( 'gg10-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.4.0', true );
+	wp_enqueue_script( 'gg10-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.4.1', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'gg10_scripts' );

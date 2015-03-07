@@ -107,12 +107,12 @@ jQuery( document ).ready( function( $ ) {
 		target = $(this).attr('href');
 		permalink = $(this).parent('.post-meta').data('permalink');
 		title = $(this).parent('.post-meta').data('title');
-		if ($(this).hasClass('facebook')) {
+		/*if ($(this).hasClass('facebook')) {
 			_gaq.push(['_trackSocial', 'facebook', 'send', title]);
 		}
 		else if ($(this).hasClass('twitter')) {
 			_gaq.push(['_trackSocial', 'twitter', 'tweet', title]);
-		}
+		}*/
 		window.open(
 			target,
 			'Spamma!',
