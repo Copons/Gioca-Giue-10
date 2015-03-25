@@ -31,6 +31,14 @@ function gg10_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	/*
+	 * Add support for infinite scroll
+	 */
+	add_theme_support('infinite-scroll', array(
+		'container'     	=> 'content',
+		'footer'			=> false,
+		'posts_per_page'	=> 10
+	));
+	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 */
 	add_theme_support( 'post-thumbnails' );
@@ -44,6 +52,7 @@ function gg10_setup() {
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 	) );
+
 
 	/*
 	 * This theme styles the visual editor to resemble the theme style.

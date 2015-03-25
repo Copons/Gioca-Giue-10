@@ -85,7 +85,7 @@ endif;
 					endif;
 
 					// If everything is finally fine, use the loop post template
-					get_template_part( 'content', 'loop' );
+					get_template_part( 'content' );
 
 					// If the loop-aside widget is active, use it now
 					if ( $post_number == 2 && is_active_sidebar( 'loop-aside' ) ) :
