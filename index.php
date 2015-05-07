@@ -67,7 +67,7 @@ endif;
 
 			while ( have_posts() ) : the_post();
 
-				$post_number++;
+				$post_count++;
 
 				// If it is a single page, use the single post template
 				if ( is_single() ) :
@@ -88,7 +88,7 @@ endif;
 					get_template_part( 'content' );
 
 					// If the loop-aside widget is active, use it now
-					if ( $post_number == 2 && is_active_sidebar( 'loop-aside' ) ) :
+					if ( $post_count == 2 && is_active_sidebar( 'loop-aside' ) ) :
 						dynamic_sidebar( 'loop-aside' );
 					endif;
 

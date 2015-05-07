@@ -13,6 +13,18 @@
 
 
 
+function gg_init() {
+
+	// COMMENT AFTER FIRST USE!!
+	$author_role = get_role( 'author' );
+	$author_role->add_cap( 'publish_posts' );
+
+}
+add_action( 'init', 'gg_init' );
+
+
+
+
 /**
  * Gioca Giue 10 setup.
  *

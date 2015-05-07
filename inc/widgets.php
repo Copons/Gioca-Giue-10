@@ -12,7 +12,7 @@ load_theme_textdomain( 'gg10', get_template_directory() . '/languages' );
 class GG10_Popular_Posts extends WP_Widget {
 
 	public function __construct() {
-	
+
 		parent::__construct(
 			'widget_gg10_popular_posts',
 			__( 'GG10 Popular Posts', 'gg10' ),
@@ -21,7 +21,7 @@ class GG10_Popular_Posts extends WP_Widget {
 				'description'	=> __( 'Articoli Popolari', 'gg10' ),
 			)
 		);
-	
+
 	}
 
 
@@ -97,7 +97,7 @@ class GG10_Popular_Posts extends WP_Widget {
 class GG10_Recent_Comments extends WP_Widget {
 
 	public function __construct() {
-	
+
 		parent::__construct(
 			'widget_gg10_recent_comments',
 			__( 'GG10 Recent Comments', 'gg10' ),
@@ -106,7 +106,7 @@ class GG10_Recent_Comments extends WP_Widget {
 				'description'	=> __( 'Commenti Recenti', 'gg10' ),
 			)
 		);
-	
+
 	}
 
 
@@ -129,7 +129,7 @@ class GG10_Recent_Comments extends WP_Widget {
 		) );
 
 		foreach ( $comments as $comment ) : ?>
-		
+
 			<li>
 				<a href="<?php echo get_comment_link( $comment->comment_ID ); ?>" title="<?php _e( 'Comment a', 'gg10' ); ?>: <?php echo get_the_title( $comment->comment_post_ID ); ?>">
 					<div>
@@ -142,7 +142,7 @@ class GG10_Recent_Comments extends WP_Widget {
 						</span>
 					</div>
 					<?php
-						$stripped_comment = strip_tags_dom ( $comment->comment_content, 'blockquote' );
+						$stripped_comment = strip_tags_preg ( $comment->comment_content, 'blockquote' );
 						$stripped_comment = strip_tags( $stripped_comment );
 						if ( strlen( $stripped_comment ) > $instance['length'] ) :
 							$stripped_comment = mb_substr( $stripped_comment, 0, $instance['length'] );
@@ -207,7 +207,7 @@ class GG10_Recent_Comments extends WP_Widget {
 class GG10_Authors_List extends WP_Widget {
 
 	public function __construct() {
-	
+
 		parent::__construct(
 			'widget_gg10_authors_list',
 			__( 'GG10 Authors List', 'gg10'),
@@ -216,7 +216,7 @@ class GG10_Authors_List extends WP_Widget {
 				'description'	=> __( 'Lista degli autori', 'gg10' ),
 			)
 		);
-	
+
 	}
 
 
@@ -299,4 +299,8 @@ function strip_tags_dom ( $text, $tag ) {
 		$elem->parentNode->removeChild( $elem );
 	endwhile;
 	return $dom->saveHTML();
+}
+
+function strip_tags_preg ( $text, $tags ) {
+	return preg_replace( '#<(' .  $tags . ')(?:[^>]+)?>.*?</\1>#s', '', $text );
 }
